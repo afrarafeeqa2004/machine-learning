@@ -1,4 +1,4 @@
-#import packages
+#import libraries
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
@@ -52,7 +52,6 @@ def predict_message(message):
     msg_tfidf = tfidf_transformer.transform(msg_counts)
     prediction = model.predict(msg_tfidf)[0]
     return "Spam" if prediction == 1 else "Ham"
-
-# Example
+            
 print(predict_message("Congratulations! You won a $1000 prize. Click here!"))
 print(predict_message("Are we still meeting tomorrow at 10am?"))
