@@ -1,4 +1,4 @@
-#import datasets and other packages
+#import libraries
 from sklearn.datasets import load_iris
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
@@ -29,3 +29,4 @@ con_matrix=confusion_matrix(y_test,y_pred)
 print(con_matrix)
 class_report=classification_report(y_test,y_pred)
 print(class_report)
+
