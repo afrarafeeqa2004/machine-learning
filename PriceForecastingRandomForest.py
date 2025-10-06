@@ -1,4 +1,4 @@
-#import dataset and packages
+#import libraries
 import yfinance as yf
 import pandas as pd
 import numpy as np
