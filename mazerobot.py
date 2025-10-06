@@ -1,4 +1,4 @@
-#import packages
+#import libraries
 import numpy as np
 import random
 import matplotlib.pyplot as plt
@@ -17,7 +17,7 @@ start = (0,0)
 goal = (4,4)
 
 #assigning values for right, left, down, up
-actions = [(0,1),(0,-1),(1,0),(-1,0)]  # R,L,D,U
+actions = [(0,1),(0,-1),(1,0),(-1,0)]
 n_actions = len(actions)
 
 def in_bounds(pos):
