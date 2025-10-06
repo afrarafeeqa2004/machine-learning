@@ -1,4 +1,4 @@
-#import dataset and packages
+#import libraries
 import matplotlib.pyplot as plt
 from sklearn.datasets import fetch_california_housing
 from sklearn.linear_model import LinearRegression
