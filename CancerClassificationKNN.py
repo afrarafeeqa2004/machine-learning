@@ -1,4 +1,4 @@
-#import dataset and packages
+#import libraries
 from sklearn.datasets import load_breast_cancer
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
@@ -14,7 +14,7 @@ y = data.target
 #split the dataset for training and testing
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-#standardize the features
+#feature scaling
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
