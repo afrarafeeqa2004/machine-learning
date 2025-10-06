@@ -1,4 +1,4 @@
-#import packages
+#import libraries
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -15,7 +15,7 @@ print(data.info())
 
 data = data.drop(columns=["Name", "Ticket", "Cabin"])
 
-# Fill missing values
+#fill missing values
 data["Age"].fillna(data["Age"].median(), inplace=True)
 data["Embarked"].fillna(data["Embarked"].mode()[0], inplace=True)
 
@@ -29,7 +29,7 @@ y = data["Survived"]
 #split the dataset for training and testing
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-#standardize the values
+#feature scaling
 scaler = StandardScaler()
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
