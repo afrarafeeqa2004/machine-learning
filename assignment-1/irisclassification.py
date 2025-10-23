@@ -12,6 +12,7 @@ feature_names=iris.feature_names
 target_names=iris.target_names
 print(X.shape)
 print(y.shape)
+
 #split the dataset for training and testing
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42, stratify=y)
 
